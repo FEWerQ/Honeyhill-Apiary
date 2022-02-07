@@ -3,3 +3,41 @@ body {
     background: slategrey;
     text-align: center;
 }
+
+
+.hha__header { grid-area: header; border: black solid 2px; }
+.hha__footer { grid-area: footer; border: black solid 2px; }
+.hha__main { grid-area: main; border: black solid 2px; }
+.hha__left { grid-area: navigation; border: black solid 2px;}
+.hha__right { grid-area: ads; border: black solid 2px;}
+
+.hha_grid {
+	display: grid;
+	grid-template-areas: "header header header"
+	                     "navigation main ads"
+	                     "footer footer footer";
+	grid-template-columns: 150px 1fr 150px;
+	grid-template-rows: 100px 
+						1fr
+						30px;
+    min-height: 100vh;
+    border: black solid 2px;
+}
+
+@media screen and (max-width: 600px) {
+	.hha_grid {
+        
+        grid-template-areas: 
+                            "header"
+		                     "navigation"
+		                     "main"
+		                     "ads"
+		                     "footer";
+		grid-template-columns: 100%;
+		grid-template-rows: 100px 
+							50px 
+							1fr
+							50px 
+							30px;
+	}
+}
