@@ -29,10 +29,10 @@ body {
         
         grid-template-areas: 
                             "header"
-		                     "navigation"
-		                     "main"
-		                     "ads"
-		                     "footer";
+		                    "navigation"
+		                    "main"
+		                    "ads"
+		                    "footer";
 		grid-template-columns: 100%;
 		grid-template-rows: 100px 
 							50px 
