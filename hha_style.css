@@ -23,85 +23,44 @@ div {
 	height: auto;}
 
 h2 {
-	font-size: em;
+	font-size: 200%;
 	background-color: rgb(0, 0, 0, 0.9);	
 	padding: 3px 10px;
 	border-radius: 14px;	
 }
 
-/* content uotoilu aka. sekoilu */
+/* content muotoilu aka. sekoilu */
 
-div:nth-child(1){
+.textBox {
 	margin: auto;
 	padding: 1vh;
 	max-width: 100vh;
 	background-color: rgb(0, 0, 0, 0.9);
-	font-size: 2vh;
+	font-size: 150%;
 }
-div:nth-child(2){
-	height: 50vh;
-	background-image: url(hha_media/honeyjar1.jpg);
+.contentHeadlineHoney1{
+	height: 100vh;
+	background-image: url(hha_media/honeyjar1\ \(2\).jpg);
 	background-attachment: fixed;
 	background-size: cover;
 }
-div:nth-child(3){
-	margin: auto;
-	padding: 1vh;
-	max-width: 100vh;
-	background-color: rgb(0, 0, 0, 0.9);
-	font-size: 2vh;
-}
-div:nth-child(4){
+.contentHeadlineHoney2{
 	height: 50vh;
 	background-image: url(hha_media/honeyjar2.jpg);
 	background-attachment: fixed;
 	background-size: cover;
 }
-div:nth-child(5){
-	margin: auto;
-	padding: 1vh;
-	max-width: 100vh;
-	background-color: rgb(0, 0, 0, 0.9);
-	font-size: 2vh;
-}
-div:nth-child(6){
+.contentHeadlineHoney3{
 	height: 50vh;
 	background-image: url(hha_media/honeyStacked.jpg);
 	background-attachment: fixed;
 	background-size: cover;
 }
-div:nth-child(7){
-	margin: auto;
-	padding: 1vh;
-	max-width: 100vh;
-	background-color: rgb(0, 0, 0, 0.9);
-	font-size: 2vh;
-}
-div:nth-child(8){
+.contentHeadlineHoney4{
 	height: 500px;
 	background-image: url(hha_media/beeswax-4052813.jpg);
 	background-attachment: fixed;
 	background-size: cover;
-}
-div:nth-child(9){
-	margin: auto;
-	padding: 1vh;
-	max-width: 100vh;
-	background-color: rgb(0, 0, 0, 0.9);
-	font-size: 2vh;
-}
-div:nth-child(10){
-	background-color: green;
-}
-div:nth-child(11){
-	margin: auto;
-	padding: 1vh;
-	max-width: 100vh;
-	background-color: rgb(0, 0, 0, 0.9);
-	font-size: 2vh;
-
-}div:nth-child(12){
-	background-color: green;
 }
 
 /* Nav on viel ripulia, en ehtinyt selvittää miks eka versio ei toiminut. Tämä on väliaikainen */
