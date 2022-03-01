@@ -13,7 +13,7 @@ body {
 	background-image: url(hha_media/background-7002290.jpg);
 	background-size: cover;
 }
-/*TÄSSÄ DIV OSASSA VIRHE, TÄMÄ KUSEE KAIKEN */
+/*TÄSSÄ DIV OSASSA VIRHE? */
 div {
 	display: flex;
 	align-items: center;
@@ -72,8 +72,11 @@ h2 {
 		
 }  
 .hha__header { 
+	padding-top: 10px;
+}
+.navBar {
+	display: block;
 	position: fixed;
-	
 }
 
 /* Gridin jäsentely - tää tulee viel muuttumaan hieman. */
