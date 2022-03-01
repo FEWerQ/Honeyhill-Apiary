@@ -12,6 +12,7 @@ body {
     text-align: center;
 	background-image: url(hha_media/background-7002290.jpg);
 	background-size: cover;
+	background-attachment: fixed;
 }
 /*TÄSSÄ DIV OSASSA VIRHE? */
 div {
@@ -69,19 +70,23 @@ h2 {
 	max-width: 100px;
 	max-height: 100px;
 	background-color: whitesmoke;
-		
+	padding: 10px;
+	border: 5px whitesmoke;
+	border-radius: 10px;
+			
 }  
 .hha__header { 
-	padding-top: 10px;
+	
 }
 .navBar {
+	padding-top: 15px;
 	display: block;
 	position: fixed;
 }
 
 /* Gridin jäsentely - tää tulee viel muuttumaan hieman. */
 
-.hha__header { grid-area: header; border: black solid 2px; }
+.hha__header { grid-area: header; }
 .hha__footer { grid-area: footer; border: black solid 2px; }
 .hha__main { grid-area: main; border: black solid 2px; }
 .hha__left { grid-area: navigation; border: black solid 2px;}
