@@ -13,13 +13,12 @@ body {
 	background-image: url(hha_media/background-7002290.jpg);
 	background-size: cover;
 }
-
+/*TÄSSÄ DIV OSASSA VIRHE, TÄMÄ KUSEE KAIKEN */
 div {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 100%;
-	min-height: 50vh;
+	width: 100%;	
 	height: auto;}
 
 h2 {
@@ -37,6 +36,7 @@ h2 {
 	max-width: 100vh;
 	background-color: rgb(0, 0, 0, 0.9);
 	font-size: 150%;
+	min-height: 50vh;
 }
 .contentHeadlineHoney1{
 	height: 100vh;
@@ -71,10 +71,12 @@ h2 {
 	background-color: whitesmoke;
 		
 }  
-.hha__header { position: fixed;
+.hha__header { 
+	position: fixed;
+	
 }
 
-/* Gridin jäsentely */
+/* Gridin jäsentely - tää tulee viel muuttumaan hieman. */
 
 .hha__header { grid-area: header; border: black solid 2px; }
 .hha__footer { grid-area: footer; border: black solid 2px; }
@@ -96,4 +98,4 @@ h2 {
 							50px 
 							30px;
 	}
-}
+
