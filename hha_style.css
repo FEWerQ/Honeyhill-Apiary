@@ -14,7 +14,6 @@ body {
 	background-size: cover;
 	background-attachment: fixed;
 }
-/*TÄSSÄ DIV OSASSA VIRHE? */
 div {
 	display: flex;
 	align-items: center;
@@ -29,19 +28,21 @@ h2 {
 	border-radius: 14px;	
 }
 
-/* content muotoilu aka. sekoilu */
+/* content muotoilu*/
 
 .textBox {
 	margin: auto;
 	padding: 1vh;
 	max-width: 100vh;
 	background-color: rgb(0, 0, 0, 0.9);
-	font-size: 150%;
+	font-size: 100%;
 	min-height: 50vh;
 }
+/* Honey osuus */
 .contentHeadlineHoney1{
 	height: 100vh;
 	background-image: url(hha_media/honeyjar1\ \(2\).jpg);
+	background-position:center;
 	background-attachment: fixed;
 	background-size: cover;
 }
@@ -63,47 +64,128 @@ h2 {
 	background-attachment: fixed;
 	background-size: cover;
 }
-
-/* Nav on viel ripulia, en ehtinyt selvittää miks eka versio ei toiminut. Tämä on väliaikainen */
-
-.svg {
-	max-width: 100px;
-	max-height: 100px;
-	background-color: whitesmoke;
-	padding: 10px;
-	border: 5px whitesmoke;
-	border-radius: 10px;
-			
-}  
-.hha__header { 
+/* Bee osuus */
+.contentHeadlineBee1{
+	height: 100vh;
+	background-image: url(hha_media/beeBG.jpg);
+	background-position:center;
+	background-attachment: fixed;
+	background-size: cover;
 	
 }
+.contentHeadlineBee2{
+	height: 80vh;
+	background-image: url(hha_media/beeMarkedQueen.jpg);
+	background-position:center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+.contentHeadlineBee3{
+	height: 80vh;
+	background-image: url(hha_media/broodComb.jpg);
+	background-position:center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+/* Tarhaus osuus */
+.contentHeadlineApiary1{
+	height: 100vh;
+	background-image: url(hha_media/beekeeperInspection.jpg);
+	background-position:center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+.contentHeadlineApiary2{
+	height: 80vh;
+	background-image: url(hha_media/beeSawrm.jpg);
+	background-position:center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+.contentHeadlineApiary3{
+	height: 80vh;
+	background-image: url(hha_media/beekeeperInspection3.jpg);
+	background-position:center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+.contentHeadlineApiary4{
+	height: 80vh;
+	background-image: url(hha_media/beekeeperInspection2.jpg);
+	background-position:center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+.contentHeadlineApiary5{
+	height: 80vh;
+	background-image: url(hha_media/fullHoneyFrame.jpg);
+	background-position:center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+/* Laki osuus */
+.contentHeadlineLaw1{
+	height: 100vh;
+	background-image: url(hha_media/beehivesInFog.jpg);
+	background-position:center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+.contentHeadlineLaw2{
+	height: 80vh;
+	background-image: url(hha_media/kennoHunaja.jpg);
+	background-position:center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+.contentHeadlineLaw3{
+	height: 80vh;
+	background-image: url(hha_media/hiveEntrance.jpg);
+	background-position:center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+.contentHeadlineLaw4{
+	height: 80vh;
+	background-image: url(hha_media/beekeeperInspection4.jpg);
+	background-position:center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+/* NAV */
+.svg {	
+	width: 20vw;
+	max-width: 100px;
+	background-color: whitesmoke;
+	padding: 5px;
+	border: 5px whitesmoke;
+	border-radius: 10px;				
+}  
+
+.hha__header { 
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;	
+	height: auto;	
+}
 .navBar {
-	padding-top: 15px;
+	padding-top: 150px;
 	display: block;
-	position: fixed;
+	position: fixed;	
 }
 
-/* Gridin jäsentely - tää tulee viel muuttumaan hieman. */
 
+/* Gridin jäsentely */
 .hha__header { grid-area: header; }
-.hha__footer { grid-area: footer; border: black solid 2px; }
-.hha__main { grid-area: main; border: black solid 2px; }
-.hha__left { grid-area: navigation; border: black solid 2px;}
-.hha__right { grid-area: ads; border: black solid 2px;}
+.hha__main { grid-area: main;}
 
 .hha_grid {        
         grid-template-areas: 
                             "header"
-		                    "navigation"
-		                    "main"
-		                    "ads"
-		                    "footer";
+		                    "main";
 		grid-template-columns: 100%;
 		grid-template-rows: 100px 
-							50px 
-							1fr
-							50px 
-							30px;
+							1fr;
 	}
 
